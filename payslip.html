@@ -1,0 +1,431 @@
+<style>
+    .container-panel-md{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        line-height: 0.6em;
+    }
+    .td-num{
+    text-align: right;
+    }
+    .all-caps-blue{
+    color: #5A8BC3;
+    text-transform: uppercase;
+    }
+
+    html,body{
+      height:297mm;
+      width:210mm;
+    }
+
+</style>
+
+
+<html lang="en">
+    <head>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">  
+      </head>
+      <body>
+        <div class="container">
+        <h1>Pusat Tuisyen Wijaya Payslip for <span class="all-caps-blue"><input type="text" placeholder="Month/Year"></span></h1>
+          <ul class="list-group">
+            <li class="list-group-item">Name: <strong><input type="text" placeholder="Danial Fahim"></strong></li>
+            <li class="list-group-item">Pay period: <strong><input type="text" placeholder="End June 2020"></strong></li>
+            <li class="list-group-item">Status: <strong><select name="" id="">
+              <option value="">Deposited</option>
+              <option value="">Pending</option>
+              <option value="">Advanced</option>
+            </select></strong></li>
+          </ul>  
+        <div class="container-panel-md">
+          <h2>Earnings total</h2>
+          <table class="table">
+              <tr style="font-weight: bold;">
+                <td>Subject</td>
+                <td>Batch</td>
+                <td>Rate/Hour (RM)</td>
+                <td>Classes/month</td>
+                <td>Total (RM)</td>
+              </tr>
+              <tbody class="table-hover">
+              <tr>
+                <td>Bahasa Melayu</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes"></td>
+                <td class="td-num"><input type="text" name="" id="total"></td>
+              </tr>
+              <tr>
+                <td>Bahasa Inggeris</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate1">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes1"></td>
+                <td class="td-num"><input type="text" name="" id="total1"></td>
+              </tr>
+              <tr>
+                <td>Sains</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate2">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes2"></td>
+                <td class="td-num"><input type="text" name="" id="total2"></td>
+              </tr>
+              <tr>
+                <td>Matematik</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate3">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes3"></td>
+                <td class="td-num"><input type="text" name="" id="total3"></td>
+              </tr>
+              <tr>
+                <td>Matematik Tambahan</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate4">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes4"></td>
+                <td class="td-num"><input type="text" name="" id="total4"></td>
+              </tr>
+              <tr>
+                <td>Fizik</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate5">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes5"></td>
+                <td class="td-num"><input type="text" name="" id="total5"></td>
+              </tr>
+              <tr>
+                <td>Kimia</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate6">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes6"></td>
+                <td class="td-num"><input type="text" name="" id="total6"></td>
+              </tr>
+              <tr>
+                <td>Biologi</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate7">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes7"></td>
+                <td class="td-num"><input type="text" name="" id="total7"></td>
+              </tr>
+              <tr>
+                <td>Sains Komputer</td>
+                <td><input type="text" placeholder="Form 5"></td>
+                <td class="td-num">
+                  <input type="text" placeholder="45" id="rate8">
+                </td>
+                <td class="td-num"><input type="text" placeholder="2" id="classes8"></td>
+                <td class="td-num"><input type="text" name="" id="total8"></td>
+              </tr>
+            </tbody>      
+               <tr><td>Grand total</td>
+                <td></td>
+                <td></td>
+                <td><button onclick="calculate()">Calculate</button></td>
+              <td class="td-num"><input type="text" id="gtotal">
+              </td>
+              </tr>
+            </table>
+        </div>
+      </div>
+      </body>
+      <script>
+
+        $("#classes").change(function() {
+          var hour = $("#classes").val();
+          var rate = $("#rate").val();
+          var total = hour * rate;
+          $("#total").val(total);
+        });
+
+        $("#classes").keyup(function() {
+          var hour = $("#classes").val();
+          var rate = $("#rate").val();
+          var total = hour * rate;
+          $("#total").val(total);
+        });
+
+        $("#rate").change(function() {
+          var hour = $("#classes").val();
+          var rate = $("#rate").val();
+          var total = hour * rate;
+          $("#total").val(total);
+        });
+        
+        $("#rate").keyup(function() {
+          var hour = $("#classes").val();
+          var rate = $("#rate").val();
+          var total = hour * rate;
+          $("#total").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes1").change(function() {
+          var hour = $("#classes1").val();
+          var rate = $("#rate1").val();
+          var total = hour * rate;
+          $("#total1").val(total);
+        });
+
+        $("#classes1").keyup(function() {
+          var hour = $("#classes1").val();
+          var rate = $("#rate1").val();
+          var total = hour * rate;
+          $("#total1").val(total);
+        });
+
+        $("#rate1").change(function() {
+          var hour = $("#classes1").val();
+          var rate = $("#rate1").val();
+          var total = hour * rate;
+          $("#total1").val(total);
+        });
+        
+        $("#rate1").keyup(function() {
+          var hour = $("#classes1").val();
+          var rate = $("#rate1").val();
+          var total = hour * rate;
+          $("#total1").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes2").change(function() {
+          var hour = $("#classes2").val();
+          var rate = $("#rate2").val();
+          var total = hour * rate;
+          $("#total2").val(total);
+        });
+
+        $("#classes2").keyup(function() {
+          var hour = $("#classes2").val();
+          var rate = $("#rate2").val();
+          var total = hour * rate;
+          $("#total2").val(total);
+        });
+
+        $("#rate2").change(function() {
+          var hour = $("#classes2").val();
+          var rate = $("#rate2").val();
+          var total = hour * rate;
+          $("#total2").val(total);
+        });
+        
+        $("#rate2").keyup(function() {
+          var hour = $("#classes2").val();
+          var rate = $("#rate2").val();
+          var total = hour * rate;
+          $("#total2").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes3").change(function() {
+          var hour = $("#classes3").val();
+          var rate = $("#rate3").val();
+          var total = hour * rate;
+          $("#total3").val(total);
+        });
+
+        $("#classes3").keyup(function() {
+          var hour = $("#classes3").val();
+          var rate = $("#rate3").val();
+          var total = hour * rate;
+          $("#total3").val(total);
+        });
+
+        $("#rate3").change(function() {
+          var hour = $("#classes3").val();
+          var rate = $("#rate3").val();
+          var total = hour * rate;
+          $("#total3").val(total);
+        });
+        
+        $("#rate3").keyup(function() {
+          var hour = $("#classes3").val();
+          var rate = $("#rate3").val();
+          var total = hour * rate;
+          $("#total3").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes4").change(function() {
+          var hour = $("#classes4").val();
+          var rate = $("#rate4").val();
+          var total = hour * rate;
+          $("#total4").val(total);
+        });
+
+        $("#classes4").keyup(function() {
+          var hour = $("#classes4").val();
+          var rate = $("#rate4").val();
+          var total = hour * rate;
+          $("#total4").val(total);
+        });
+
+        $("#rate4").change(function() {
+          var hour = $("#classes4").val();
+          var rate = $("#rate4").val();
+          var total = hour * rate;
+          $("#total4").val(total);
+        });
+        
+        $("#rate4").keyup(function() {
+          var hour = $("#classes4").val();
+          var rate = $("#rate4").val();
+          var total = hour * rate;
+          $("#total4").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes5").change(function() {
+          var hour = $("#classes5").val();
+          var rate = $("#rate5").val();
+          var total = hour * rate;
+          $("#total5").val(total);
+        });
+
+        $("#classes5").keyup(function() {
+          var hour = $("#classes5").val();
+          var rate = $("#rate5").val();
+          var total = hour * rate;
+          $("#total5").val(total);
+        });
+
+        $("#rate5").change(function() {
+          var hour = $("#classes5").val();
+          var rate = $("#rate5").val();
+          var total = hour * rate;
+          $("#total5").val(total);
+        });
+        
+        $("#rate5").keyup(function() {
+          var hour = $("#classes5").val();
+          var rate = $("#rate5").val();
+          var total = hour * rate;
+          $("#total5").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes6").change(function() {
+          var hour = $("#classes6").val();
+          var rate = $("#rate6").val();
+          var total = hour * rate;
+          $("#total6").val(total);
+        });
+
+        $("#classes6").keyup(function() {
+          var hour = $("#classes6").val();
+          var rate = $("#rate6").val();
+          var total = hour * rate;
+          $("#total6").val(total);
+        });
+
+        $("#rate6").change(function() {
+          var hour = $("#classes6").val();
+          var rate = $("#rate6").val();
+          var total = hour * rate;
+          $("#total6").val(total);
+        });
+        
+        $("#rate6").keyup(function() {
+          var hour = $("#classes6").val();
+          var rate = $("#rate6").val();
+          var total = hour * rate;
+          $("#total6").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes7").change(function() {
+          var hour = $("#classes7").val();
+          var rate = $("#rate7").val();
+          var total = hour * rate;
+          $("#total7").val(total);
+        });
+
+        $("#classes7").keyup(function() {
+          var hour = $("#classes7").val();
+          var rate = $("#rate7").val();
+          var total = hour * rate;
+          $("#total7").val(total);
+        });
+
+        $("#rate7").change(function() {
+          var hour = $("#classes7").val();
+          var rate = $("#rate7").val();
+          var total = hour * rate;
+          $("#total7").val(total);
+        });
+        
+        $("#rate7").keyup(function() {
+          var hour = $("#classes7").val();
+          var rate = $("#rate7").val();
+          var total = hour * rate;
+          $("#total7").val(total);
+        });
+
+        //////////////////////////////
+
+        $("#classes8").change(function() {
+          var hour = $("#classes8").val();
+          var rate = $("#rate8").val();
+          var total = hour * rate;
+          $("#total8").val(total);
+        });
+
+        $("#classes8").keyup(function() {
+          var hour = $("#classes8").val();
+          var rate = $("#rate8").val();
+          var total = hour * rate;
+          $("#total8").val(total);
+        });
+
+        $("#rate8").change(function() {
+          var hour = $("#classes8").val();
+          var rate = $("#rate8").val();
+          var total = hour * rate;
+          $("#total8").val(total);
+        });
+        
+        $("#rate8").keyup(function() {
+          var hour = $("#classes8").val();
+          var rate = $("#rate8").val();
+          var total = hour * rate;
+          $("#total8").val(total);
+        });
+
+        //////////////////////////////
+
+        function calculate(){
+          var gtotal = parseInt($("#total").val()) + parseInt($("#total1").val()) + parseInt($("#total2").val()) +parseInt($("#total3").val()) +parseInt($("#total4").val()) +parseInt($("#total5").val()) +parseInt($("#total6").val()) +parseInt($("#total7").val()) + parseInt($("#total8").val());
+          $("#gtotal").val(gtotal);
+        }
+
+
+      </script>
+</html>
